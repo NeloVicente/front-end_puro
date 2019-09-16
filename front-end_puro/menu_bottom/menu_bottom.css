@@ -1,0 +1,29 @@
+.btn{
+    background-color: #D3D3D3;
+}
+.btnMenu{
+    padding: 10px 10px;
+    width: 20px;
+}
+.div-menu-item{
+    padding: 10px 20px; 
+}
+.disabled{
+    transform: translateY(-150%)
+}
+.menu-item{
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu-list{
+    background-color: #DCDCDC;
+}
+.a-nav{
+    color: #191B30;
+    font-size: 12px;
+}
+.a-nav:hover{
+    color: blue;
+}
