@@ -1,6 +1,10 @@
-const menu = document.querySelector("#btnMenu")
-const divMenu = document.querySelector("#menu-List")
+function btnMenu(){
+    
+        const divMenu = document.querySelector("#menu-List")
+        divMenu.classList.toggle("disabled")
+}
 
-menu.addEventListener("click", function(){
-    divMenu.classList.toggle("disabled")
-})
+
+
+
+    
