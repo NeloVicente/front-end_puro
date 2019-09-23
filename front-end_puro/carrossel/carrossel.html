@@ -1,0 +1,50 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pattern.css">
+    <link rel="stylesheet" href="carrossel.css">
+    <title>Carrossel</title>
+</head>
+<body>  
+        <figure class="figure-slide">
+            <div id="slide" class="slide">
+                <img id="img-1" src="Kiss.jpg" alt="" class="img-slide ativo">
+                <img id="img-2" src="rammstein.jpg" alt="" class="img-slide ">
+                <img id="img-3" src="Slipknot.jpg" alt="" class="img-slide">
+            </div>
+            <div class="div-nextPrev">
+                <img id="prev" src="prev.png" alt="" class="nextPrev prev" width="40px" onclick="prev()">
+                <img id="next" src="next.png" alt="" class="nextPrev next" width="40px" onclick="next()">
+            </div>
+
+            <figcaption id="legenda" class="figcaption-slide">
+                <div id="legenda-1" class="legenda legendaAtivada">
+                    <h3 class="titulo">Kiss</h3>
+                    <p class="texto">Rock N Roll All Night</p>
+                </div>
+                <div id="legenda-2" class="legenda">
+                    <h3 class="titulo">Rammstein</h3>
+                    <p class="texto">Du Hast</p>
+                </div>
+                <div id="legenda-3" class="legenda">
+                    <h3 class="titulo">Slipknot</h3>
+                    <p class="texto">Duality</p>
+                </div>                
+            </figcaption>            
+                <div id="div-linha" class="div-linha">
+                    <img id="linha-1" src="line.png" alt="" class="barra linhaAtivada" width="30px" onclick="linha(1)">
+                    <img id="linha-2" src="line.png" alt="" class="barra" width="30px" onclick="linha(2)">
+                    <img id="linha-3" src="line.png" alt="" class="barra" width="30px" onclick="linha(3)">
+                </div>
+
+
+            
+        </figure>
+
+        
+       
+
+    <script src="carrossel.js"></script>
+</body>
+</html>

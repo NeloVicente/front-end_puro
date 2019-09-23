@@ -1,0 +1,97 @@
+//Cor Espessura 
+$borda: 5px solid #D3D3D3;
+$texto: #D3D3D3;
+$titulo: red;
+
+//posição
+$absolute: absolute;
+$relative: relative;
+$margin-top: 100px;
+$margin-right: 0px;
+$margin-bottom: 0px;
+$margin-left: 100px;
+$padding-top: 100px;
+$padding-right: 0px;
+$padding-bottom: 0px;
+$padding-left: 100px;
+$text-align: left;
+
+//Efeito
+$opaco: 0.5;
+$sumir: none;
+$aparecer: inline;
+
+//Tamanho
+$whidth: 100px;
+$heidth: 50px;
+
+//Grupos
+%opaco{
+    opacity: $opaco;
+}
+%relative{
+    position: $relative;
+}
+
+//Imagem
+.figure-slide{
+    border: $borda;
+    width: $whidth*6.6;
+    height: $heidth*7.6;
+    margin-left: $margin-left/4;
+    margin-top: $margin-top/4;
+}
+.img-slide {
+    position: $absolute;
+    opacity: $opaco*0;
+}
+
+.ativo{
+    opacity: $opaco*2;
+}
+
+//Next Previous
+.div-nextPrev{
+    @extend %relative;
+    padding-top: $margin-top*1.5;
+}
+.next{
+    margin-left: $margin-left*5.5;
+    @extend %opaco;
+}
+.prev{
+    @extend %opaco;
+}
+
+//Legenda
+.titulo{
+    color: $titulo;
+}
+.texto{
+    color: $texto;
+}
+.figcaption-slide{
+    @extend %relative;
+    margin-top: $margin-top*1.2;
+    margin-left: $margin-left*2.5;
+    text-align: $text-align;
+
+}
+.legenda{
+    display: $sumir;
+}
+.legendaAtivada{
+    display: $aparecer;
+}
+
+//Linha
+.div-linha{
+    @extend %relative;
+    padding-left: $padding-left*2.5;
+}
+.barra{
+    @extend %opaco;
+}
+.linhaAtivada{
+    opacity: $opaco*2;
+}

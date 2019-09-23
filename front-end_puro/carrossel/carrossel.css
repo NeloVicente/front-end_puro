@@ -1,0 +1,50 @@
+.next, .prev, .barra {
+  opacity: 0.5; }
+
+.div-nextPrev, .figcaption-slide, .div-linha {
+  position: relative; }
+
+.figure-slide {
+  border: 5px solid #D3D3D3;
+  width: 660px;
+  height: 380px;
+  margin-left: 25px;
+  margin-top: 25px; }
+
+.img-slide {
+  position: absolute;
+  opacity: 0; }
+
+.ativo {
+  opacity: 1; }
+
+.div-nextPrev {
+  padding-top: 150px; }
+
+.next {
+  margin-left: 550px; }
+
+.titulo {
+  color: red; }
+
+.texto {
+  color: #D3D3D3; }
+
+.figcaption-slide {
+  margin-top: 120px;
+  margin-left: 250px;
+  text-align: left; }
+
+.legenda {
+  display: none; }
+
+.legendaAtivada {
+  display: inline; }
+
+.div-linha {
+  padding-left: 250px; }
+
+.linhaAtivada {
+  opacity: 1; }
+
+/*# sourceMappingURL=carrossel.css.map */
