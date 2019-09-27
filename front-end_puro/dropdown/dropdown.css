@@ -1,0 +1,59 @@
+/*Dropdown*/
+.div-nav{
+    background-color: #dcdcdc;
+    width: 100%;
+    position: relative;
+    z-index: 1000;
+}
+.div-nav{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;    
+    font-size: 12px;
+}
+.a-nav, .a-dropdown{
+    color: black;
+}
+.dropdown-img{
+    margin-left: 6px;
+    transform: rotate(0deg);
+    opacity: 0.5;
+}
+.rotate{
+    transform: rotate(-180deg);
+}
+
+/*Lista*/
+.nav-list{
+    position: absolute;
+    margin-left: 160px;
+    width: 90px;
+    height: 105px;
+    z-index: 1;
+    transform: translateY(-150%);
+    background-color: #b6b6b6;
+}
+.a-dropdown{
+    margin-left: 12px;    
+    font-size: 11px;
+}
+.li-dropdown{
+    padding-top: 10px;
+}
+.ativo{
+    transform: translateY(0);
+}
+
+/*compartilhado*/
+.div-nav, .nav-list{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.dropdown-img, .nav-list{
+    transition: transform 0.3s linear 0.1s;
+}
+.a-nav, .nav-logo{
+    margin-left: 10px; 
+}
+
