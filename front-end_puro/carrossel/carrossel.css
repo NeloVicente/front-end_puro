@@ -4,6 +4,9 @@
 .div-nextPrev, .figcaption-slide, .div-linha {
   position: relative; }
 
+.img-slide, .barra {
+  transition: opacity 0.8s linear 0s; }
+
 .figure-slide {
   border: 5px solid #D3D3D3;
   width: 660px;
@@ -36,7 +39,8 @@
   text-align: left; }
 
 .legenda {
-  display: none; }
+  display: none;
+  font-family: Georgia, "Times New Roman", Times, serif; }
 
 .legendaAtivada {
   display: inline; }

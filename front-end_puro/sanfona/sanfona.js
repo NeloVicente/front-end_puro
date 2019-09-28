@@ -1,7 +1,9 @@
 function sanfona(a){
         
-        const text = document.getElementById("text-" + a);
-        text.classList.toggle("disabled");
+        const text = document.querySelector("#text-" + a);
+        const seta = document.querySelector("#arrow-" + a);
+        text.classList.toggle("ativado");
+        seta.classList.toggle("arrowAtivado");
     
 }
 

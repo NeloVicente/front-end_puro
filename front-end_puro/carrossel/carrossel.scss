@@ -16,6 +16,9 @@ $padding-bottom: 0px;
 $padding-left: 100px;
 $text-align: left;
 
+//Fonte
+$font: Georgia, 'Times New Roman', Times, serif;
+
 //Efeito
 $opaco: 0.5;
 $sumir: none;
@@ -32,6 +35,9 @@ $heidth: 50px;
 %relative{
     position: $relative;
 }
+%transition{
+    transition: opacity 0.8s linear 0s;
+}
 
 //Imagem
 .figure-slide{
@@ -44,6 +50,7 @@ $heidth: 50px;
 .img-slide {
     position: $absolute;
     opacity: $opaco*0;
+    @extend %transition;
 }
 
 .ativo{
@@ -78,10 +85,13 @@ $heidth: 50px;
 
 }
 .legenda{
-    display: $sumir;
+    display: $sumir; 
+    font-family: $font;
+    
 }
 .legendaAtivada{
-    display: $aparecer;
+
+    display: $aparecer;    
 }
 
 //Linha
@@ -91,6 +101,7 @@ $heidth: 50px;
 }
 .barra{
     @extend %opaco;
+    @extend %transition;
 }
 .linhaAtivada{
     opacity: $opaco*2;
