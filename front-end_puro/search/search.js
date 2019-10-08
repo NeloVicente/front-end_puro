@@ -8,7 +8,7 @@ function pesquisando(){
     for(let i = 0; i < bloco.length; i++){
         let li = bloco[i].getElementsByTagName("p")[0]; 
         texto = li.textContent || li.innerText;
-        texto.toUpperCase().indexOf(elemento) > -1 ? bloco[i].style.display = "block" : bloco[i].style.display = "none";
+        texto.toUpperCase().indexOf(elemento) > -1 ? bloco[i].classList.remove("display") : bloco[i].classList.add("display");
     }
 
 }
